@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-grid">
+        <form name="form">
+            <input class="textview" type="text" name="textview" max="8">
+                <div class="link-box">       
+                     <a id="link" href="new.html">History</a>
+                </div>
+        </form>
+        <button class="extra-column-element-1" onClick="allClear()">AC</button>
+        <button onClick="insert('**')">exp</button>
+        <button onClick="insert('Math.sqrt( )')">sqrt</button>
+        <button onClick="insert('1')">1</button>
+        <button onClick="insert('2')">2</button>
+        <button onClick="insert(3)">3</button>
+        <button onClick="insert('+')">+</button>
+        <button onClick="insert(4)">4</button>
+        <button onClick="insert(5)">5</button>
+        <button onClick="insert(6)">6</button>
+        <button onClick="insert('-')">-</button>
+        <button onClick="insert(7)">7</button>
+        <button onClick="insert(8)">8</button>
+        <button onClick="insert(9)">9</button>
+        <button onClick="insert('*')">x</button>
+        <button onClick="insert(0)">0</button>
+        <button onClick="insert('.')">.</button>
+        <button onClick="compute()">=</button>
+        <button onClick="insert('/')">/</button>
+    </div>
+
+    <script
+    src="home.js">
+    </script>
+
+</body>
+</html>

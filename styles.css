@@ -1,0 +1,133 @@
+/*
+Background
+*/
+body {
+    background-image: linear-gradient(to right, rgb(24, 202, 214), white)
+}
+
+/*
+Entire grid
+*/
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80px 80px 80px 80px;
+}
+
+.flexbox-1{
+    display: flexbox;
+    width: 320px;
+    height: 480px;
+    justify-content: center;
+    position: relative;
+    top: 140px;
+    left: 600px;
+    border: 1px solid white;
+    flex-direction: column;
+    background-color: black;
+}
+
+#link{
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.link-box{
+    background-color: black;
+    position: relative;
+    top: -37px;
+    left: 3px;
+}
+
+/*
+Einstein Image
+
+.img{ 
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    left: 100px;
+    transform: rotate(-10deg);
+}
+
+Common Math Meme
+.img2{
+    width: 227px;
+    height: 148px;
+    position: relative;
+    top: -80px;
+    left: 950px;
+    transform: rotate(10deg);
+}
+*/
+
+/*
+Output Window
+*/
+.textview{
+    width: 320px;
+    height: 76px;
+    position: relative;
+    top: 85px;
+    left: -50px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: xx-large;
+    text-align: right;
+    margin: 50px;
+}
+
+/*
+All Clear (AC)
+*/
+.extra-column-element-1{
+    display: grid;
+    grid-column: 1 / span 2;
+    align-content: center;
+}
+
+/*
+All other buttons
+*/
+.calculator-grid > button{
+    background-color: rgb(214, 149, 63);
+    border: 1px solid white;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    height: 80px;
+}
+
+/*
+Button hover animation
+*/
+.calculator-grid > button:hover{
+    opacity: 1;
+}
+
+/*
+Stop button border when click on button
+*/
+.calculator-grid > button:focus{
+    outline: none;
+}
+
+#textt{
+    color: white;
+    font-weight: lighter;
+}
+
+
+
+
+
